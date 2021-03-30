@@ -1,22 +1,13 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
-
 plugins {
+    kotlin("jvm")
     application
 }
-repositories {
-    mavenLocal()
-    maven {
-        setUrl("https://maven.aliyun.com/repository/public/")
-    }
-    maven {
-        setUrl("https://maven.aliyun.com/repository/spring/")
-    }
-    mavenCentral()
-}
+
 
 dependencies {
-
+    testImplementation(kotlin("test-junit5"))
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.0")
 }
 
 application {
