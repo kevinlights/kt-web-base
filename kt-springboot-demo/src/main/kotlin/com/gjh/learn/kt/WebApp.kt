@@ -1,6 +1,7 @@
 package com.gjh.learn.kt
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan
 import org.springframework.boot.runApplication
 
 /**
@@ -10,6 +11,7 @@ import org.springframework.boot.runApplication
  * @author kevinlights
  */
 @SpringBootApplication
+@ConfigurationPropertiesScan
 class WebApp
 
 fun main(args: Array<String>) {
