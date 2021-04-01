@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+hello:
+  name: guang
+  age: 27
+  ext:
+    prop-a: PropA
+    prop-b: false
