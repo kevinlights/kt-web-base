@@ -7,3 +7,12 @@ hello:
   ext:
     prop-a: PropA
     prop-b: false
+
+spring:
+  datasource:
+    url: jdbc:sqlite:test.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    database-platform: org.hibernate.dialect.SQLiteDialect
+    show-sql: true
+#    generate-ddl: true

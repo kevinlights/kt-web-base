@@ -35,5 +35,5 @@ class JpaController(private val articleRepo: ArticleRepo) {
     }
 
     fun Article.render() =
-        "title:$title, headline: $headline, content: $content, author: ${author.login}, addedAt: $addedAt"
+        "id: $id, title:$title, headline: $headline, content: $content, author: ${author.login}, addedAt: $addedAt"
 }
