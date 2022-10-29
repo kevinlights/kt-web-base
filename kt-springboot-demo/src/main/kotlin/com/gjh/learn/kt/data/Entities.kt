@@ -32,3 +32,9 @@ data class User(
     var description: String? = null,
     @Id @GeneratedValue var id: Long? = null
 )
+
+@Entity
+data class Product(
+    @Id @GeneratedValue var id: Long? = null,
+    var name: String = "",
+)
