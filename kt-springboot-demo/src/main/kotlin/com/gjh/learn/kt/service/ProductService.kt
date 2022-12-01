@@ -7,4 +7,7 @@ package com.gjh.learn.kt.service
  * @author kevinlights
  */
 interface ProductService {
+    fun getName(): String
+
+    fun check(type: String) {}
 }

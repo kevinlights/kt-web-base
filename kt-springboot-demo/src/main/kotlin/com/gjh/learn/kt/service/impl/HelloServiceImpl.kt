@@ -16,4 +16,11 @@ class HelloServiceImpl(@Autowired val helloConfig: HelloConfig) : HelloService {
     override fun sayHello(name: String): String {
         return "Hello ${helloConfig.name}, ${helloConfig.ext.propA}, ${helloConfig.ext.propB}"
     }
+
+    override fun validate(name: String) {
+        println("start validating for $name")
+        if (name.equals("1")) {
+            throw Exception("Test Validation Error")
+        }
+    }
 }

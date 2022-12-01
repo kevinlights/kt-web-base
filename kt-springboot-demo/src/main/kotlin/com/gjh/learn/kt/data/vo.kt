@@ -28,4 +28,12 @@ class ProductInfoVO(
     var productPrice: BigDecimal?,
 
     var productStatus: Int = 0,
-)
+) {
+    var test: String? = null
+}
+
+val product = ProductInfoVO("", BigDecimal(0), 1)
+fun main() {
+    product.productName = ""
+    product.test = ""
+}

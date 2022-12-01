@@ -8,4 +8,12 @@ package com.gjh.learn.kt.service
  */
 interface HelloService {
     fun sayHello(name: String): String
+
+    fun noNeedOverride(): String {
+        return ""
+    }
+
+    fun validate(name: String) {}
+
+
 }
